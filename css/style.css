@@ -58,6 +58,7 @@ h2 {
 }
 @media (min-width: 768px) {
     html {
+        background-color: white;
         background-image: url('../img/md-background.jpg');
         background-position: center;
         background-size: cover;
@@ -82,6 +83,7 @@ h2 {
 }
 @media (min-width: 992px) {
     #content {
+        background-color: white;
         background-image: url('../img/lg-background.jpg');
         background-size: cover;
         background-position: center;
