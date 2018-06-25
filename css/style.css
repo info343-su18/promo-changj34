@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
+body {
+    background-color: rgb(67, 72, 76);
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1, h2 {
+    color: rgb(249, 158, 26);
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 1px 1px black;
+}
+#content {
+    padding-top: 48px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    height: 48px;
+    z-index: 9;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(249, 158, 26);
+    border-bottom: solid rgb(249, 158, 26);
+}
+#content a {
+    color: darkkhaki;
+}
+.row > a:nth-of-type(3)[rel="home"] {
+    display: none;
+}
+figcaption p {
+    color: lightgray;
+}
+h2 {
+    padding-top: 60px;
+}
+@media (min-width: 768px) {
+    html {
+        background-color: white;
+        background-image: url('../img/md-background.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    body {
+        height: 0;
+        color: gray;
+    }
+    figcaption p {
+        color: darkgray;
+    }
+    #content {
+        padding-top: 60px;
+    }
+    nav {
+        font-size: 1.5rem;
+        height: 60px;
+    }
+    
+}
+@media (min-width: 992px) {
+    #content {
+        background-color: white;
+        background-image: url('../img/lg-background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-attachment: fixed;
+    }
+    body {
+        height: 0;
+    }
+    html {
+        background-image: url('../img/side-background.png');
+    }
+}
+@media (min-width: 1200px) {
+    #content {
+        background-image: url('../img/xl-background.jpg');
+    }
+}
